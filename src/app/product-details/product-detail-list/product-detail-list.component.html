@@ -1,0 +1,64 @@
+<table class="table table-hover" *ngIf="products" align="center">
+    <!--<tr>
+        <th scope="col">ProductName</th>
+        <th scope="col">Stock</th>
+        <th scope="col">UnitPrice</th>
+        <th scope="col">Image</th>
+        <th scope="col">AddtoCart</th>
+      </tr>-->
+      <tr *ngFor="let pd of products" align="center">
+         
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+            <table align="center">
+            <p ><img [src]="getImageUrl(pd.image)" height="150" width="200" ></p>
+        </table>
+            <table >
+                <tr>
+                    <th scope="col">ProductName</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">UnitPrice</th>
+                    <th scope="col">AddtoCart</th>
+                </tr>
+                <tr>
+                    <td>
+                        {{pd.productName}}
+                    </td>
+                    <td>
+                        {{pd.stock}}
+                    </td>
+                    <td>
+                        {{pd.unitPrice}}
+                    </td>
+                    <td>
+                        <button class="btn btn-success btn-lg" type="submit">AddToCart</button>
+                    </td>
+                </tr>
+            </table>
+              
+            </div>
+        </div>
+          
+          <br>
+          <br>
+         
+          
+    <!--<tr *ngFor="let pd of products">
+        <td>
+            {{pd.productName}}
+        </td>
+        <td>
+            {{pd.stock}}
+        </td>
+        <td>
+            {{pd.unitPrice}}
+        </td>
+        <td>
+            <img [src]="getImageUrl(pd.image)" height="50" width="50">
+        </td>
+        <td>
+            <button class="btn btn-success btn-lg" type="submit">AddToCart</button>
+        </td>
+    </tr>-->
+</table>
+
