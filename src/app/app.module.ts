@@ -8,6 +8,7 @@ import { ProductDetailListComponent } from './product-details/product-detail-lis
 import { ProductDetailService } from './shared/product-detail.service';
 import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+
 import {
   BrowserAnimationsModule,
   NoopAnimationsModule,
